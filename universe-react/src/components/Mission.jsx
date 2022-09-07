@@ -1,19 +1,19 @@
 import React from "react";
 
-class Missions extends React.Component {
+class SpaceMissions extends React.Component {
     render() {
-        // const { name, year, country, destination } = this.props
+         const { info: { name, year, country, destination }} = this.props
         return (
-            <div>
-                <p>Name</p>
-                <div>
-                    <p>Year</p>
-                    <p>Country</p>
-                    <p>Destination</p>
+            <div className="div-flex">
+                <p className="name-mission">{ name }</p>
+                <div className="div-mission">
+                    <p className="p-mission">{ year }</p>
+                    <p className="p-mission">{ country }</p>
+                    <p className="p-mission">{ destination }</p>
                 </div>
             </div>
         )
     }
 }
 
-export default Missions
+export default SpaceMissions
